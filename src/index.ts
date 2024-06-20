@@ -1,9 +1,11 @@
+import GeussNumber from './geussNumber';
 import userInput from './utils';
 
 const menuText = `
-ROCK PAPER SCISSORS
-1. Start Game
-2. Exit
+RANDOM GAMES
+1. Geuss Number
+2. Rock Paper Scissors
+3. Exit
 
 choose a number : `;
 
@@ -14,8 +16,10 @@ while (!menuLooper) {
 	menuInput = Number(menuInput);
 
 	if (menuInput === 1) {
-		console.log('START');
+		GeussNumber();
 	} else if (menuInput === 2) {
+		console.log('START');
+	} else if (menuInput === 3) {
 		menuLooper = true;
 	}
 }
